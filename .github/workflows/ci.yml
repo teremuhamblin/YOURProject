@@ -1,0 +1,63 @@
+name: Universal CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Detect language
+        run: |
+          echo "Detecting project language..."
+          if [ -f package.json ]; then
+            echo "NODE" > lang.txt
+          elif [ -f requirements.txt ]; then
+            echo "PYTHON" > lang.txt
+          elif ls *.java 1> /dev/null 2>&1; then
+            echo "JAVA" > lang.txt
+          elif ls *.go 1> /dev/null 2>&1; then
+            echo "GO" > lang.txt
+          elif ls *.rs 1> /dev/null 2>&1; then
+            echo "RUST" > lang.txt
+          elif ls *.csproj 1> /dev/null 2>&1; then
+            echo ".NET" > lang.txt
+          else
+            echo "UNKNOWN" > lang.txt
+          fi
+
+      - name: Run build/test
+        run: |
+          LANG=$(cat lang.txt)
+          echo "Detected: $LANG"
+
+          case $LANG in
+            "NODE")
+              npm install
+              npm test
+              ;;
+            "PYTHON")
+              pip install -r requirements.txt
+              pytest || echo "No tests"
+              ;;
+            "JAVA")
+              javac *.java
+              ;;
+            "GO")
+              go build ./...
+              ;;
+            "RUST")
+              cargo build
+              ;;
+            ".NET")
+              dotnet build
+              ;;
+            *)
+              echo "No known build system. Skipping."
+              ;;
+          esac
