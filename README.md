@@ -42,6 +42,8 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 
 ### 🜁 1. Architecture Ultra‑Zero‑Trust
 
+[![pages-build-deployment](https://github.com/teremuhamblin/YOURProject/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/teremuhamblin/YOURProject/actions/workflows/pages/pages-build-deployment)
+
 - Zero‑Visibility Layer (ZVL) : aucune information interne n’est exposée en clair.  
 
 - Silent‑Modules : modules critiques masqués, non détectables par les autres composants.  
