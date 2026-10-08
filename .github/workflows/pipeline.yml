@@ -1,0 +1,65 @@
+name: Universal Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- Detect language ---
+      - name: Detect language
+        run: |
+          if [ -f package.json ]; then echo "NODE" > lang.txt
+          elif [ -f requirements.txt ]; then echo "PYTHON" > lang.txt
+          elif ls *.java 1> /dev/null 2>&1; then echo "JAVA" > lang.txt
+          elif ls *.go 1> /dev/null 2>&1; then echo "GO" > lang.txt
+          elif ls *.rs 1> /dev/null 2>&1; then echo "RUST" > lang.txt
+          elif ls *.csproj 1> /dev/null 2>&1; then echo ".NET" > lang.txt
+          else echo "UNKNOWN" > lang.txt
+          fi
+
+      # --- Build ---
+      - name: Build
+        run: |
+          LANG=$(cat lang.txt)
+          echo "Building for $LANG"
+
+          case $LANG in
+            "NODE") npm install ;;
+            "PYTHON") pip install -r requirements.txt ;;
+            "JAVA") javac *.java ;;
+            "GO") go build ./... ;;
+            "RUST") cargo build ;;
+            ".NET") dotnet build ;;
+            *) echo "No build system detected." ;;
+          esac
+
+      # --- Test ---
+      - name: Test
+        run: |
+          LANG=$(cat lang.txt)
+          echo "Testing for $LANG"
+
+          case $LANG in
+            "NODE") npm test || echo "No tests" ;;
+            "PYTHON") pytest || echo "No tests" ;;
+            "JAVA") echo "No Java tests configured" ;;
+            "GO") go test ./... || echo "No tests" ;;
+            "RUST") cargo test || echo "No tests" ;;
+            ".NET") dotnet test || echo "No tests" ;;
+            *) echo "No test system detected." ;;
+          esac
+
+      # --- Deploy ---
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo "Deploying project..."
+          echo "This is a universal deploy step."
+          echo "Replace with your real deploy command."
