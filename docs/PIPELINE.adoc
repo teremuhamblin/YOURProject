@@ -1,0 +1,15 @@
+= PIPELINE — CI/CD Quantum‑Era
+
+== Étapes
+1. Détection du langage
+2. Build
+3. Tests
+4. Lint
+5. Analyse sécurité
+6. Artefacts
+7. Déploiement (optionnel)
+
+== Sécurité
+Jobs isolés
+Secrets protégés
+Scan CodeQL + Trivy + Semgrep
