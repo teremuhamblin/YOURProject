@@ -15,9 +15,11 @@ Juste la version la plus sécurisée que ton cycle 1.x puisse supporter.
 
 ### 🜄 Release
 
+```text
 - v1.6‑BlackOps.SECRET
 
 - Ultra‑Zero‑Trust / Invisible‑Ops
+```
 
 ### 🜂 Résumé stratégique
 
@@ -44,6 +46,7 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 
 [![pages-build-deployment](https://github.com/teremuhamblin/YOURProject/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/teremuhamblin/YOURProject/actions/workflows/pages/pages-build-deployment)
 
+```markdown
 - Zero‑Visibility Layer (ZVL) : aucune information interne n’est exposée en clair.  
 
 - Silent‑Modules : modules critiques masqués, non détectables par les autres composants.  
@@ -53,11 +56,13 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 - Hard‑Isolation++ : isolation renforcée, multi‑dimensionnelle, dynamique.  
 
 - Anti‑Correlation Engine : empêche toute corrélation entre modules, logs ou flux.
+```
 
 ---
 
 ### 🜃 2. Fonctionnalités Ultra‑Sécurisées
 
+```markdown
 - Silent‑Integrity Core : vérification interne silencieuse, non‑observable.  
 
 - Stealth‑Validator : validation cryptée, signatures internes invisibles.  
@@ -69,6 +74,7 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 - Auto‑Containment Protocol : confinement automatique en cas d’anomalie.  
 
 - Zero‑Leak Engine : empêche toute fuite d’information, même indirecte.
+```
 
 ---
 
@@ -96,6 +102,7 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 ---
 
 ### 🛡️ 4. Sécurité 
+```rst
 - Ultra‑Zero‑Trust v1.6.SECRET
    - ABAC‑Stealth : règles dynamiques invisibles, activées selon menace.  
    - RBAC‑Silent : rôles non listés, non visibles, activés uniquement en opération.  
@@ -105,10 +112,12 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
    - Anti‑Lateralization++ : blocage total des mouvements latéraux internes.  
    - Anti‑Tamper Quantum : neutralisation automatique des modifications non autorisées.  
    - Zero‑Exposure : aucune donnée sensible exposée, même indirectement.
+```
 
 ---
 
 ### 🧪 5. Tests & Validation SECRET
+```adoc
 - Tests unitaires : 100% validés  
 - Tests d’intégration : modules critiques isolés  
 - Tests de résistance : OK  
@@ -117,10 +126,12 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 - Tests de non‑corrélation : validés  
 - Audit interne : GhostAudit++ validé  
 - CI/CD : pipeline Zero‑Visibility validé
+```
 
 ---
 
 ### 🛰️ 6. CI/CD Ultra‑Durci
+```org
 - Zero‑Visibility Pipeline  
 - Security Gate SECRET  
 - Ghost‑Audit++ Hook  
@@ -129,6 +140,7 @@ est la déclinaison ultra‑confidentielle, non‑indexée, non‑traçable, et 
 - Aucun artefact non signé n’est accepté.  
 - Aucun module non isolé n’est déployé.  
 - Aucun log persistant n’est conservé.
+```
 
 ---
 
