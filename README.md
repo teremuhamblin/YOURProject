@@ -181,10 +181,11 @@ Elle prépare la future v2.0‑BlackOps++ ULTRA‑STEALTH, qui introduira :
 ```text
 YOURProject/
  ├── src/
- │    └── main.txt        # Ton code, peu importe le langage
+ │    └── main.txt          # Ton code, peu importe le langage
  └── .github/
       └── workflows/
-           └── ci.yml     # Workflow GitHub Actions universel
+           └── ci.yml        # Workflow GitHub Actions universel ci
+           └── pipeline.yml  # Workflow GitHub Actions universel pipeline
 ```
 
 ---
