@@ -1,8 +1,7 @@
 = YOURProject
 
-= Quantum‑Era
+= Quantum‑Era Universal Template
 
-= Universal Template
 :doctype: book
 :toc: left
 :toclevels: 3
