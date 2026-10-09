@@ -1,0 +1,12 @@
+= ARCHITECTURE — YOURProject
+
+== Vue globale
+YOURProject est structuré pour supporter plusieurs langages dans un environnement CI/CD universel.
+
+== Dossiers
+src/ : code source multi‑langages
+docs/ : documentation AsciiDoc
+.github/ : gouvernance + CI/CD
+
+== Flux
+Développement → CI/CD → Release → Documentation

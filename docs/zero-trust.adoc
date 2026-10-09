@@ -1,0 +1,3 @@
+= Zero‑Trust v1.6 — YOURProject
+
+Politique complète Zero‑Trust appliquée au pipeline.

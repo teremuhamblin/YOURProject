@@ -1,0 +1,19 @@
+= MODULES — YOURProject
+
+== Python
+src/python/main.py
+
+== Node.js
+src/node/index.js
+
+== Java
+src/java/Main.java
+
+== Go
+src/go/main.go
+
+== Rust
+src/rust/main.rs
+
+== .NET
+src/dotnet/Program.cs

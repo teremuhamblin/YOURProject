@@ -1,0 +1,19 @@
+= SECURITY — Zero‑Trust v1.6
+
+== Principes
+- Vérification continue
+- Segmentation des pipelines
+- Aucun accès implicite
+- Secrets isolés
+
+== CI/CD
+- Analyse CodeQL
+- Scan Trivy
+- Semgrep
+- Jobs isolés
+
+== Dépendances
+Audit automatique via pipeline.
+
+== Vulnérabilités
+Rapport via GitHub Security.

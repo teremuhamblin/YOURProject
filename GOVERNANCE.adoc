@@ -1,0 +1,18 @@
+= GOVERNANCE — YOURProject
+
+== Objectif
+Définir les règles de gestion, contribution et maintenance du projet.
+
+== Rôles
+- Maintainer : Teremu
+- Reviewer : Automatisé via CI/CD
+- Contributor : Ouvert
+
+== Branches
+- main : stable
+- develop : intégration
+- feature/* : développement
+- hotfix/* : corrections urgentes
+
+== Processus PR
+Voir PULL_REQUEST_TEMPLATE.md

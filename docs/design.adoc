@@ -1,0 +1,6 @@
+= Design — Architecture Quantum‑Era
+
+Principes de conception :
+- Modularité
+- Sécurité
+- Compatibilité multi‑langages

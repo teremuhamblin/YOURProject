@@ -1,0 +1,12 @@
+= CONTRIBUTING — YOURProject
+
+== Comment contribuer
+1. Fork
+2. Branch feature/*
+3. Commit propre
+4. PR vers develop
+
+== Règles
+- Code propre
+- Tests obligatoires
+- Documentation obligatoire

@@ -1,0 +1,9 @@
+= CHANGELOG — YOURProject
+:toc:
+
+== v2.0.0 — Quantum‑Era Upgrade
+* Ajout documentation complète (.adoc)
+* Ajout gouvernance GitHub
+* Ajout pipeline CI/CD durci
+* Normalisation multi‑langages
+* Ajout politique Zero‑Trust

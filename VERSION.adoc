@@ -1,0 +1,13 @@
+= VERSION — YOURProject
+
+== Version actuelle
+v2.0.0 — Quantum‑Era Edition
+
+== Politique de versioning
+SemVer 2.0.0
+MAJOR.MINOR.PATCH
+
+== Règles
+- MAJOR : rupture ou refonte
+- MINOR : ajout de fonctionnalités
+- PATCH : corrections
