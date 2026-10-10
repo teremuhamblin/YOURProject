@@ -19,6 +19,8 @@ Le workflow CI détecte automatiquement le type de projet et exécute les comman
 
 ### ⚙️ Fonctionnement du workflow CI
 
+[![Universal CI](https://github.com/teremuhamblin/YOURProject/actions/workflows/ci.yml/badge.svg)](https://github.com/teremuhamblin/YOURProject/actions/workflows/ci.yml)
+
 ```text
 - Détection automatique du langage dans `src/`  
 - Exécution des commandes de build/test correspondantes  
