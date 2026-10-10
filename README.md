@@ -1,5 +1,7 @@
 ###### README.md >> markdown 
 
+[![Universal Pipeline](https://github.com/teremuhamblin/YOURProject/actions/workflows/pipeline.yml/badge.svg)](https://github.com/teremuhamblin/YOURProject/actions/workflows/pipeline.yml)
+
 # YOURProject ⚡  
 
 >>Template GitHub minimaliste, universel et compatible avec tous les langages.
